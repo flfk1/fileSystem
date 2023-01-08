@@ -29,7 +29,7 @@ int do_write(int fd,char* text,int len,int position);
 //读文件(用户层):检查合法性（fd,len）
 int my_read(int fd,int len);
 //读文件(物理层):读出指定文件从读写指针开始长度为指定长度的内容到text数组中
-int do_read();
+int do_read(int fd,int len, char *text);
 //退出文件系统:将虚拟磁盘内容写入文件，释放用户文件打开表和虚拟磁盘空间的内存
 int my_exit();
 
